@@ -1,7 +1,6 @@
 class Bot:
-    def __init__(self, bot_class):
+    def __init__(self):
         self.user_sessions = []
-        self.bot_class = bot_class
 
 
     def got_location(self, location):
