@@ -7,7 +7,7 @@ class Bot:
         pass
 
     def got_text_message(self, msg):
-
+        pass
 
 
     def got_command(self, cmd, user_id, text):
