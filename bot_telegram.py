@@ -28,7 +28,7 @@ def location_sent(message):
 @bot.message_handler(content_types=["text"])
 def text_sent(message):
     text = message.text
-    bot_wrap.got_text_message(text)
+    bot_wrap.got_text_message(text, get_user(message))
 
 
 @bot.message_handler(func=lambda message: True)
