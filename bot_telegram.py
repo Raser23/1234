@@ -14,6 +14,11 @@ def get_user(message):
 def send_welcome(message):
 	bot_wrap.got_command("start",get_user(message),"")
 
+
+@bot.message_handler(commands=['help'])
+def send_welcome(message):
+    bot_wrap.got_command("help", get_user(message), "")
+
 @bot.message_handler(content_types=["location"])
 def location_sent(message):
     print(message.location)
